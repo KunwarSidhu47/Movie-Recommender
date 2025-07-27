@@ -1,6 +1,6 @@
-# Movie Recommender W
+# Movie Recommender 
 
-**Movie Recommender W** is a dynamic web application that suggests top-rated movies by genre or title using the TMDb API. Built entirely with HTML5, CSS3, and JavaScript, it features live YouTube trailer previews and a persistent watchlist using LocalStorage.
+**Movie Recommender** is a dynamic web application that suggests top-rated movies by genre or title using the TMDb API. Built entirely with HTML5, CSS3, and JavaScript, it features live YouTube trailer previews and a persistent watchlist using LocalStorage.
 
 [Live Demo](https://kunwarsidhu47.github.io/Movie-Recommender/)
 
