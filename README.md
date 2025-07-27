@@ -2,7 +2,7 @@
 
 **Movie Recommender W** is a dynamic web application that suggests top-rated movies by genre or title using the TMDb API. Built entirely with HTML5, CSS3, and JavaScript, it features live YouTube trailer previews and a persistent watchlist using LocalStorage.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-blue?logo=github)](https://your-username.github.io/movie-recommender)
+[Live Demo](https://kunwarsidhu47.github.io/Movie-Recommender/)
 
 ---
 
@@ -38,17 +38,12 @@
 
 To run locally:
 ```bash
-git clone https://github.com/your-username/movie-recommender.git
-cd movie-recommender
+git clone https://github.com/kunwarsidhu47/Movie-Recommender.git
+cd Movie-Recommender
 open index.html  # or just double-click
 ```
 
-To deploy via GitHub Pages:
-1. Push to GitHub repo  
-2. Go to `Settings > Pages`  
-3. Set source to `main` branch and `/ (root)`  
-4. Your live URL will look like:  
-   `https://your-username.github.io/movie-recommender`
+Live Website: [https://kunwarsidhu47.github.io/Movie-Recommender/](https://kunwarsidhu47.github.io/Movie-Recommender/)
 
 ---
 
@@ -77,7 +72,3 @@ To deploy via GitHub Pages:
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-Live Site: [https://your-username.github.io/movie-recommender](https://your-username.github.io/movie-recommender)
