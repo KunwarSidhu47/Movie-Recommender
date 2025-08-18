@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: #09a3e5;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments for container */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+}
+
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Styling for search sections */
+.search-section {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-section h3 {
+  color: #ffc107;
+  margin-top: 0;
+  font-size: 22px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+/* Responsive adjustments for input and button */
+@media (max-width: 600px) {
+  input, button {
+    width: calc(100% - 20px); /* Full width minus margin */
+    margin: 5px 10px;
+  }
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px; /* Spacing between movie cards */
+}
+
+.movie {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  margin: 0; /* Removed individual margin due to gap */
+  padding: 10px;
+  width: 200px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.movie:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments for movie cards */
+@media (max-width: 480px) {
+  .movie {
+    width: calc(100% - 40px); /* Full width minus padding and gap */
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .movie {
+    width: calc(50% - 40px); /* Two columns */
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .movie {
+    width: calc(33.33% - 40px); /* Three columns */
+  }
+}
+
+
+.movie h4 {
+  font-size: 15px;
+  margin: 10px 0 5px;
+  min-height: 45px; /* Ensure consistent height for titles */
+  overflow: hidden;
+}
+
+.movie p {
+  font-size: 12px;
+  color: #aaa;
+  line-height: 1.4;
+  height: 60px; /* Fixed height for overview */
+  overflow: hidden;
+}
+
+
+.movie img {
+  width: 100%;
+  height: 300px; /* Fixed height for posters */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+  border-radius: 8px;
+}
+
+.movie button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  margin: 10px auto 0 auto; /* auto centers it horizontally */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  width: fit-content;  /* only as wide as the text */
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.movie button:nth-child(5) { /* This targets the second button (Save) */
+  background-color: #444;
+  margin-top: 5px;
+}
+
+.movie button:nth-child(5):hover {
+  background-color: #666;
+}
+
+.movie button:hover {
+  background-color: #c40812;
+}
+.back-link {
+  color: #aaa;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.back-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.watchlist-btn {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #000;
+  padding: 10px 15px;
+  margin: 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.watchlist-btn:hover {
+  background-color: #ffca28;
+}
+
+/* New styles for Rotten Tomatoes rating */
+.rating-info {
+  font-size: 14px;
+  color: #f8d7da; /* Light red for emphasis */
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Custom Message Box */
+.custom-message-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  text-align: center;
+  min-width: 250px;
+}
+
+.custom-message-box p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.custom-message-box button {
+  background-color: #09a3e5;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  width: auto; /* Override general button width */
+  margin: 0; /* Override general button margin */
+}
+
+.custom-message-box button:hover {
+  background-color: #078ac7;
+}
