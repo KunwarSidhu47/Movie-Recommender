@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>🎬 Movie Recommender</h1>
+    <a href="watchlist.html" class="watchlist-btn">📺 View Watchlist</a>
+
+    <!-- Genre Search Section -->
+    <div class="search-section">
+      <h3>Search by Genre</h3>
+      <input type="text" id="genreInput" placeholder="Enter a genre (e.g. comedy, action)" />
+      <button onclick="searchByGenre()">Recommend by Genre</button>
+    </div>
+
+    <!-- Movie Title Search Section -->
+    <div class="search-section">
+      <h3>Search by Title</h3>
+      <input type="text" id="titleInput" placeholder="Enter movie title (e.g. Inception)" />
+      <button onclick="searchByTitle()">Search by Title</button>
+    </div>
+
+    <div id="results" class="movie-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
