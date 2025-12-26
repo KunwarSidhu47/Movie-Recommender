@@ -4,33 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Movie Recommender</title>
+  <title>Movie Recommender Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="container">
-    <h1>🎬 Movie Recommender</h1>
-    <a href="watchlist.html" class="watchlist-btn">📺 View Watchlist</a>
-
-    <!-- Genre Search Section -->
-    <div class="search-section">
-      <h3>Search by Genre</h3>
-      <input type="text" id="genreInput" placeholder="Enter a genre (e.g. comedy, action)" />
-      <button onclick="searchByGenre()">Recommend by Genre</button>
-    </div>
-
-    <!-- Movie Title Search Section -->
-    <div class="search-section">
-      <h3>Search by Title</h3>
-      <input type="text" id="titleInput" placeholder="Enter movie title (e.g. Inception)" />
-      <button onclick="searchByTitle()">Search by Title</button>
-    </div>
-
-    <div id="results" class="movie-list"></div>
+  <div id="progressBar" class="loading-bar"></div>
+  <div class="background-glow">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
   </div>
+  <div id="app"></div>
 
-  <script src="script.js"></script>
+  <div id="toast-container"></div>
+  <script type="module" src="src/main.js"></script>
 </body>
 
 </html>

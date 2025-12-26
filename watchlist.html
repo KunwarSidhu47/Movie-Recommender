@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Watchlist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <div class="background-glow">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
   <div class="container">
-    <h1>❤️ My Watchlist</h1>
-    <a href="index.html" class="back-link">← Back to Recommender</a>
-    <div id="watchlist" class="movie-list"></div>
+    <header class="hero-section">
+      <h1>❤️ My <span class="highlight">Watchlist</span></h1>
+      <a href="index.html" class="watchlist-btn" style="background: rgba(255,255,255,0.1); margin-bottom: 30px;">← Back
+        to Recommender</a>
+    </header>
+
+    <div id="watchlist" class="movie-list glass-panel" style="min-height: 300px;"></div>
   </div>
 
   <script src="watchlist.js"></script>
 </body>
+
 </html>
